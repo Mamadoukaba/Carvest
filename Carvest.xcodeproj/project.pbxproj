@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65BA34A91BA3CE3D00EC5978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA34A81BA3CE3D00EC5978 /* AppDelegate.swift */; };
+		65BA34AB1BA3CE3D00EC5978 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA34AA1BA3CE3D00EC5978 /* FirstViewController.swift */; };
+		65BA34AD1BA3CE3D00EC5978 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA34AC1BA3CE3D00EC5978 /* SecondViewController.swift */; };
+		65BA34B01BA3CE3D00EC5978 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BA34AE1BA3CE3D00EC5978 /* Main.storyboard */; };
+		65BA34B21BA3CE3D00EC5978 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65BA34B11BA3CE3D00EC5978 /* Images.xcassets */; };
+		65BA34B51BA3CE3D00EC5978 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65BA34B31BA3CE3D00EC5978 /* LaunchScreen.xib */; };
+		65BA34C11BA3CE3D00EC5978 /* CarvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA34C01BA3CE3D00EC5978 /* CarvestTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65BA34BB1BA3CE3D00EC5978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65BA349B1BA3CE3D00EC5978 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65BA34A21BA3CE3D00EC5978;
+			remoteInfo = Carvest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65BA34A31BA3CE3D00EC5978 /* Carvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65BA34A71BA3CE3D00EC5978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65BA34A81BA3CE3D00EC5978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65BA34AA1BA3CE3D00EC5978 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		65BA34AC1BA3CE3D00EC5978 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		65BA34AF1BA3CE3D00EC5978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65BA34B11BA3CE3D00EC5978 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		65BA34B41BA3CE3D00EC5978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		65BA34BA1BA3CE3D00EC5978 /* CarvestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarvestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65BA34BF1BA3CE3D00EC5978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65BA34C01BA3CE3D00EC5978 /* CarvestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarvestTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65BA34A01BA3CE3D00EC5978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BA34B71BA3CE3D00EC5978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65BA349A1BA3CE3D00EC5978 = {
+			isa = PBXGroup;
+			children = (
+				65BA34A51BA3CE3D00EC5978 /* Carvest */,
+				65BA34BD1BA3CE3D00EC5978 /* CarvestTests */,
+				65BA34A41BA3CE3D00EC5978 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65BA34A41BA3CE3D00EC5978 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65BA34A31BA3CE3D00EC5978 /* Carvest.app */,
+				65BA34BA1BA3CE3D00EC5978 /* CarvestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65BA34A51BA3CE3D00EC5978 /* Carvest */ = {
+			isa = PBXGroup;
+			children = (
+				65BA34A81BA3CE3D00EC5978 /* AppDelegate.swift */,
+				65BA34AA1BA3CE3D00EC5978 /* FirstViewController.swift */,
+				65BA34AC1BA3CE3D00EC5978 /* SecondViewController.swift */,
+				65BA34AE1BA3CE3D00EC5978 /* Main.storyboard */,
+				65BA34B11BA3CE3D00EC5978 /* Images.xcassets */,
+				65BA34B31BA3CE3D00EC5978 /* LaunchScreen.xib */,
+				65BA34A61BA3CE3D00EC5978 /* Supporting Files */,
+			);
+			path = Carvest;
+			sourceTree = "<group>";
+		};
+		65BA34A61BA3CE3D00EC5978 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65BA34A71BA3CE3D00EC5978 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65BA34BD1BA3CE3D00EC5978 /* CarvestTests */ = {
+			isa = PBXGroup;
+			children = (
+				65BA34C01BA3CE3D00EC5978 /* CarvestTests.swift */,
+				65BA34BE1BA3CE3D00EC5978 /* Supporting Files */,
+			);
+			path = CarvestTests;
+			sourceTree = "<group>";
+		};
+		65BA34BE1BA3CE3D00EC5978 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65BA34BF1BA3CE3D00EC5978 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65BA34A21BA3CE3D00EC5978 /* Carvest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65BA34C41BA3CE3D00EC5978 /* Build configuration list for PBXNativeTarget "Carvest" */;
+			buildPhases = (
+				65BA349F1BA3CE3D00EC5978 /* Sources */,
+				65BA34A01BA3CE3D00EC5978 /* Frameworks */,
+				65BA34A11BA3CE3D00EC5978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Carvest;
+			productName = Carvest;
+			productReference = 65BA34A31BA3CE3D00EC5978 /* Carvest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65BA34B91BA3CE3D00EC5978 /* CarvestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65BA34C71BA3CE3D00EC5978 /* Build configuration list for PBXNativeTarget "CarvestTests" */;
+			buildPhases = (
+				65BA34B61BA3CE3D00EC5978 /* Sources */,
+				65BA34B71BA3CE3D00EC5978 /* Frameworks */,
+				65BA34B81BA3CE3D00EC5978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65BA34BC1BA3CE3D00EC5978 /* PBXTargetDependency */,
+			);
+			name = CarvestTests;
+			productName = CarvestTests;
+			productReference = 65BA34BA1BA3CE3D00EC5978 /* CarvestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65BA349B1BA3CE3D00EC5978 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Mamadou Kaba";
+				TargetAttributes = {
+					65BA34A21BA3CE3D00EC5978 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					65BA34B91BA3CE3D00EC5978 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 65BA34A21BA3CE3D00EC5978;
+					};
+				};
+			};
+			buildConfigurationList = 65BA349E1BA3CE3D00EC5978 /* Build configuration list for PBXProject "Carvest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65BA349A1BA3CE3D00EC5978;
+			productRefGroup = 65BA34A41BA3CE3D00EC5978 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65BA34A21BA3CE3D00EC5978 /* Carvest */,
+				65BA34B91BA3CE3D00EC5978 /* CarvestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65BA34A11BA3CE3D00EC5978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65BA34B01BA3CE3D00EC5978 /* Main.storyboard in Resources */,
+				65BA34B51BA3CE3D00EC5978 /* LaunchScreen.xib in Resources */,
+				65BA34B21BA3CE3D00EC5978 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BA34B81BA3CE3D00EC5978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65BA349F1BA3CE3D00EC5978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65BA34AD1BA3CE3D00EC5978 /* SecondViewController.swift in Sources */,
+				65BA34A91BA3CE3D00EC5978 /* AppDelegate.swift in Sources */,
+				65BA34AB1BA3CE3D00EC5978 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BA34B61BA3CE3D00EC5978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65BA34C11BA3CE3D00EC5978 /* CarvestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65BA34BC1BA3CE3D00EC5978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65BA34A21BA3CE3D00EC5978 /* Carvest */;
+			targetProxy = 65BA34BB1BA3CE3D00EC5978 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65BA34AE1BA3CE3D00EC5978 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65BA34AF1BA3CE3D00EC5978 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65BA34B31BA3CE3D00EC5978 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65BA34B41BA3CE3D00EC5978 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65BA34C21BA3CE3D00EC5978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65BA34C31BA3CE3D00EC5978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65BA34C51BA3CE3D00EC5978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Carvest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		65BA34C61BA3CE3D00EC5978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Carvest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		65BA34C81BA3CE3D00EC5978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CarvestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carvest.app/Carvest";
+			};
+			name = Debug;
+		};
+		65BA34C91BA3CE3D00EC5978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CarvestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carvest.app/Carvest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65BA349E1BA3CE3D00EC5978 /* Build configuration list for PBXProject "Carvest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65BA34C21BA3CE3D00EC5978 /* Debug */,
+				65BA34C31BA3CE3D00EC5978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65BA34C41BA3CE3D00EC5978 /* Build configuration list for PBXNativeTarget "Carvest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65BA34C51BA3CE3D00EC5978 /* Debug */,
+				65BA34C61BA3CE3D00EC5978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65BA34C71BA3CE3D00EC5978 /* Build configuration list for PBXNativeTarget "CarvestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65BA34C81BA3CE3D00EC5978 /* Debug */,
+				65BA34C91BA3CE3D00EC5978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65BA349B1BA3CE3D00EC5978 /* Project object */;
+}
