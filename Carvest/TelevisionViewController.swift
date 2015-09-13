@@ -18,6 +18,7 @@ class TelevisionViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getTVBrandname()
+        self.view.backgroundColor = UIColor(red: 20/255, green: 70/255, blue: 128/255, alpha: 1.00)
         
     }
     
@@ -79,6 +80,8 @@ class TelevisionViewController: UITableViewController {
         cell.textLabel?.text = brandName[indexPath.row]
         cell.textLabel?.font = UIFont(name: "Arial-BoldMT", size: 16)
         cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.textLabel?.shadowColor = UIColor.blackColor()
+        cell.textLabel?.shadowOffset = CGSizeMake(0,1)
         cell.backgroundColor = colors[indexPath.row]
         return cell
     }
@@ -93,6 +96,7 @@ class TelevisionViewController: UITableViewController {
                 brand.energyUsage = self.estimatedEnergyUsage[path.row]
                 brand.name = self.brandName[path.row]
                 vc.brand = brand
+                vc.view.backgroundColor = colors[path.row]
             }
         }
     }

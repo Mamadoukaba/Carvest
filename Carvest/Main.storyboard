@@ -54,15 +54,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFz-rd-zte">
-                                <rect key="frame" x="0.0" y="113" width="600" height="47"/>
+                                <rect key="frame" x="0.0" y="113" width="600" height="78"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bY-0e-BaP">
-                                <rect key="frame" x="223" y="188" width="155" height="73"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bY-0e-BaP">
+                                <rect key="frame" x="223" y="215" width="155" height="73"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="tgG-zy-p85"/>
+                                    <constraint firstAttribute="width" constant="155" id="gNv-nB-cGr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -71,13 +71,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4bY-0e-BaP" firstAttribute="top" secondItem="rFz-rd-zte" secondAttribute="bottom" constant="28" id="UIh-qg-zZc"/>
-                            <constraint firstItem="rFz-rd-zte" firstAttribute="top" secondItem="bdT-J2-OTu" secondAttribute="bottom" constant="49" id="eee-Qf-Wvo"/>
-                            <constraint firstItem="Dmc-0v-cZa" firstAttribute="top" secondItem="4bY-0e-BaP" secondAttribute="bottom" constant="290" id="f1Q-kI-598"/>
-                            <constraint firstItem="4bY-0e-BaP" firstAttribute="centerX" secondItem="rFz-rd-zte" secondAttribute="centerX" id="ksm-eX-qff"/>
-                            <constraint firstItem="4bY-0e-BaP" firstAttribute="centerX" secondItem="a74-cS-gKt" secondAttribute="centerX" id="oFN-tb-C2Y"/>
-                            <constraint firstItem="Dmc-0v-cZa" firstAttribute="top" secondItem="rFz-rd-zte" secondAttribute="bottom" constant="391" id="uHK-qb-rXw"/>
-                            <constraint firstItem="rFz-rd-zte" firstAttribute="leading" secondItem="a74-cS-gKt" secondAttribute="leading" id="yMP-Pq-CyJ"/>
+                            <constraint firstItem="4bY-0e-BaP" firstAttribute="centerX" secondItem="rFz-rd-zte" secondAttribute="centerX" id="DoK-3n-sMf"/>
+                            <constraint firstItem="4bY-0e-BaP" firstAttribute="top" secondItem="rFz-rd-zte" secondAttribute="bottom" constant="24" id="GxU-Xr-3lq"/>
+                            <constraint firstItem="rFz-rd-zte" firstAttribute="top" secondItem="bdT-J2-OTu" secondAttribute="bottom" constant="49" id="IZJ-t5-tb7"/>
+                            <constraint firstItem="Dmc-0v-cZa" firstAttribute="top" secondItem="rFz-rd-zte" secondAttribute="bottom" constant="360" id="L9b-H0-Nea"/>
+                            <constraint firstItem="Dmc-0v-cZa" firstAttribute="top" secondItem="4bY-0e-BaP" secondAttribute="bottom" constant="263" id="YNx-9L-ijZ"/>
+                            <constraint firstItem="rFz-rd-zte" firstAttribute="leading" secondItem="a74-cS-gKt" secondAttribute="leading" id="cKw-id-XpA"/>
+                            <constraint firstItem="4bY-0e-BaP" firstAttribute="centerX" secondItem="a74-cS-gKt" secondAttribute="centerX" id="jyu-Pf-E3c"/>
                         </constraints>
                     </view>
                     <connections>
@@ -120,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="1662" y="360"/>
         </scene>
-        <!--Computers Table View Controller-->
+        <!--Computer Brands-->
         <scene sceneID="GeC-gW-ToS">
             <objects>
                 <tableViewController id="8fx-3n-Vie" customClass="ComputersTableViewController" customModule="Carvest" customModuleProvider="target" sceneMemberID="viewController">
@@ -144,7 +144,7 @@
                             <outlet property="delegate" destination="8fx-3n-Vie" id="zLJ-D1-z1d"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Vf1-Ju-Erw"/>
+                    <navigationItem key="navigationItem" title="Computer Brands" id="Vf1-Ju-Erw"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qdo-bI-hox" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,11 +170,11 @@
             </objects>
             <point key="canvasLocation" x="50" y="-26"/>
         </scene>
-        <!--Item-->
+        <!--Television-->
         <scene sceneID="dy1-pS-nng">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wbp-b7-5Zz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="HDTV-50" selectedImage="TV-50" id="PmR-fe-f9Y"/>
+                    <tabBarItem key="tabBarItem" title="Television" image="Television Copy" selectedImage="Television" id="PmR-fe-f9Y"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="V8T-0Y-4Gg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -193,7 +193,7 @@
         <scene sceneID="rcf-wX-k77">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I4X-V9-V3m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Lightbulb" image="Idea-50" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Lightbulb" image="Lightbulb" selectedImage="Lightbulb Selected" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pJH-r4-pdO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -208,11 +208,11 @@
             </objects>
             <point key="canvasLocation" x="850" y="360"/>
         </scene>
-        <!--Item-->
+        <!--Computers-->
         <scene sceneID="ahV-DY-C9e">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wc8-z2-rfG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="Laptop-50" id="xRm-TR-L7T"/>
+                    <tabBarItem key="tabBarItem" title="Computers" image="Computer Copy" selectedImage="Computer" id="xRm-TR-L7T"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AII-2T-Hhl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -229,10 +229,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="HDTV-50" width="50" height="50"/>
-        <image name="Idea-50" width="50" height="50"/>
-        <image name="Laptop-50" width="50" height="50"/>
-        <image name="TV-50" width="50" height="50"/>
+        <image name="Computer" width="25" height="25"/>
+        <image name="Computer Copy" width="25" height="25"/>
+        <image name="Lightbulb" width="25" height="25"/>
+        <image name="Lightbulb Selected" width="25" height="25"/>
+        <image name="Television" width="25" height="25"/>
+        <image name="Television Copy" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zqQ-Ro-viq"/>

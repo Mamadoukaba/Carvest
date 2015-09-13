@@ -16,8 +16,7 @@ class LightBulbViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         getLightBulbBrandName()
-        
-        self.view.backgroundColor = UIColor.blackColor()
+        self.view.backgroundColor = UIColor(red: 20/255, green: 70/255, blue: 128/255, alpha: 1.00)
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,6 +66,8 @@ class LightBulbViewController: UITableViewController {
         cell.textLabel?.text = lightBulbBrand[indexPath.row]
         cell.textLabel?.font = UIFont(name: "Arial-BoldMT", size: 16)
         cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.textLabel?.shadowColor = UIColor.blackColor()
+        cell.textLabel?.shadowOffset = CGSizeMake(0,1)
         cell.backgroundColor = colors[indexPath.row]
         
         return cell
@@ -82,6 +83,7 @@ class LightBulbViewController: UITableViewController {
                 brand.energyUsage = self.lightEnergyUsage[path.row]
                 brand.name = self.lightBulbBrand[path.row]
                 vc.brand = brand
+                vc.view.backgroundColor = colors[path.row]
             }
         }
     }

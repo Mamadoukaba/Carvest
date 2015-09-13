@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let tabBarController = window!.rootViewController as! UITabBarController
+        
+         tabBarController.viewControllers![0].tabBarItem!.selectedImage = UIImage(named: "Lightbulb Selected")
+        tabBarController.viewControllers![1].tabBarItem!.selectedImage = UIImage(named: "Television")
+        tabBarController.viewControllers![2].tabBarItem!.selectedImage = UIImage(named: "Computer")
         return true
     }
 

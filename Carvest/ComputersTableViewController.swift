@@ -15,6 +15,7 @@ class ComputersTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getComputerBrandName()
+        self.view.backgroundColor = UIColor(red: 20/255, green: 70/255, blue: 128/255, alpha: 1.00)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -71,6 +72,8 @@ class ComputersTableViewController: UITableViewController {
         cell.textLabel?.text = computerBrand[indexPath.row]
         cell.textLabel?.font = UIFont(name: "Arial-BoldMT", size: 16)
         cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.textLabel?.shadowColor = UIColor.blackColor()
+        cell.textLabel?.shadowOffset = CGSizeMake(0,1)
         cell.backgroundColor = colors[indexPath.row]
         return cell
     }
@@ -84,6 +87,7 @@ class ComputersTableViewController: UITableViewController {
                 brand.energyUsage = self.computerenergys[path.row]
                 brand.name = self.computerBrand[path.row]
                 vc.brand = brand
+                vc.view.backgroundColor = colors[path.row]
             }
         }
     }
