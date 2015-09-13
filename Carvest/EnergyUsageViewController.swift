@@ -23,24 +23,32 @@ class EnergyUsageViewController: UIViewController {
             brandtextLabel.text = "\(brand.name) uses an yearly estimated average of:"
             brandtextLabel.font = UIFont(name: "Arial-BoldMT", size: 16)
             brandtextLabel?.textColor = UIColor.whiteColor()
+            brandtextLabel?.shadowColor = UIColor.blackColor()
+            brandtextLabel?.shadowOffset = CGSizeMake(0,1)
         }
         
         if brand?.typeofEnergy == "TV" {
             textLabel.text = "\(brand!.energyUsage) Kwh"
             textLabel.font = UIFont(name: "Arial-BoldMT", size: 16)
             textLabel?.textColor = UIColor.whiteColor()
+            textLabel?.shadowColor = UIColor.blackColor()
+            textLabel?.shadowOffset = CGSizeMake(0,1)
         } else if brand?.typeofEnergy == "Light" {
            let lightEnergyFloat = (brand!.energyUsage as NSString).floatValue
             let totalLightEnergy = lightEnergyFloat * 8 * 365
            textLabel.text = "\(totalLightEnergy) Wh"
             textLabel.font = UIFont(name: "Arial-BoldMT", size: 16)
             textLabel?.textColor = UIColor.whiteColor()
+            textLabel?.shadowColor = UIColor.blackColor()
+            textLabel?.shadowOffset = CGSizeMake(0,1)
         } else {
             let computerEnergyFloat = (brand!.energyUsage as NSString).floatValue
             let totalComputerEnergy = computerEnergyFloat * 8 * 365
             textLabel.text = "\(totalComputerEnergy) Wh"
             textLabel.font = UIFont(name: "Arial-BoldMT", size: 16)
             textLabel?.textColor = UIColor.whiteColor()
+            textLabel?.shadowColor = UIColor.blackColor()
+            textLabel?.shadowOffset = CGSizeMake(0,1)
         }
     }
     
