@@ -16,6 +16,8 @@ class LightBulbViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         getLightBulbBrandName()
+        
+        self.view.backgroundColor = UIColor.blackColor()
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,6 +65,10 @@ class LightBulbViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
         
         cell.textLabel?.text = lightBulbBrand[indexPath.row]
+        cell.textLabel?.font = UIFont(name: "Arial-BoldMT", size: 16)
+        cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.backgroundColor = colors[indexPath.row]
+        
         return cell
     }
     

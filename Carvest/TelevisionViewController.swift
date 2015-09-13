@@ -11,6 +11,9 @@ import UIKit
 class TelevisionViewController: UITableViewController {
     var brandName = [String]()
     var estimatedEnergyUsage = [String]()
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +77,9 @@ class TelevisionViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
 
         cell.textLabel?.text = brandName[indexPath.row]
+        cell.textLabel?.font = UIFont(name: "Arial-BoldMT", size: 16)
+        cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.backgroundColor = colors[indexPath.row]
         return cell
     }
     

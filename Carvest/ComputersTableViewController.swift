@@ -69,6 +69,9 @@ class ComputersTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
         
         cell.textLabel?.text = computerBrand[indexPath.row]
+        cell.textLabel?.font = UIFont(name: "Arial-BoldMT", size: 16)
+        cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.backgroundColor = colors[indexPath.row]
         return cell
     }
     
