@@ -33,6 +33,10 @@ class ComputersTableViewController: UITableViewController {
     
     func getComputerBrandName() {
         let url = NSURL(string: ComputerURL)
+        
+        let indicator = UIActivityIndicatorView(frame: self.view.bounds)
+        self.view.addSubview(indicator)
+        indicator.startAnimating()
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
             var serializationerror: NSError?
             var ComputerDataArray: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &serializationerror)
@@ -53,6 +57,7 @@ class ComputersTableViewController: UITableViewController {
                     self.computerenergys.append(computerEnergy["item"].string!)
                 }
             }
+            indicator.removeFromSuperview()
         }
         task.resume()
     }
@@ -90,5 +95,9 @@ class ComputersTableViewController: UITableViewController {
                 vc.view.backgroundColor = colors[path.row]
             }
         }
+    }
+    
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView.new()
     }
 }

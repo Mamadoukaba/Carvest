@@ -33,7 +33,9 @@ class TelevisionViewController: UITableViewController {
     func getTVBrandname() {
         let url = NSURL(string: TVURL)!
         
-        
+        let indicator = UIActivityIndicatorView(frame: self.view.bounds)
+        self.view.addSubview(indicator)
+        indicator.startAnimating()
         let task = NSURLSession.sharedSession().dataTaskWithURL(url) {(data, response, error) in
         
             var serializationerror: NSError?
@@ -61,7 +63,7 @@ class TelevisionViewController: UITableViewController {
                     }
                 }
             }
-
+            indicator.removeFromSuperview()
           }
         task.resume()
             
@@ -106,7 +108,9 @@ class TelevisionViewController: UITableViewController {
         
     }
 
-    
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView.new()
+    }
 
 
 }

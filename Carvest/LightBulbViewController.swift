@@ -29,6 +29,9 @@ class LightBulbViewController: UITableViewController {
     func getLightBulbBrandName() {
         let url = NSURL(string: lightBulbURL)
         
+        let indicator = UIActivityIndicatorView(frame: self.view.bounds)
+        self.view.addSubview(indicator)
+        indicator.startAnimating()
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
             var serializationerror: NSError?
             var lightBulbDataArray: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &serializationerror)
@@ -51,7 +54,7 @@ class LightBulbViewController: UITableViewController {
                             
                             }
                         }
-            
+            indicator.removeFromSuperview()
         }
         task.resume()
     }
@@ -87,6 +90,9 @@ class LightBulbViewController: UITableViewController {
             }
         }
     }
-
+    
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView.new()
+    }
 }
 
